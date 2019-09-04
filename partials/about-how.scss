@@ -1,0 +1,46 @@
+.about-how {
+    background: rgba(241, 234, 237, 0.25);
+
+    .item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    .icon {
+        // border: 1px solid tomato;
+        margin-right: 20px;
+    }
+
+    .description {
+        border-left: 2px solid $blue;
+        padding-left: 20px;
+        width: 100%;
+
+        h4 { 
+            margin: 0 0 10px 0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    // Responsiveness
+
+    @media(max-width: 1180px) {
+
+        i {
+            font-size: 26px;
+        }
+
+        .icon {
+            margin: 0 0 20px 20px;
+        }
+        
+    }
+
+}

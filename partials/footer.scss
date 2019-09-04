@@ -1,0 +1,107 @@
+footer {
+    background: $blue;
+    color: white;
+    padding: 40px 0 5px 0;
+
+    .wrapper {
+        padding: 0;
+    }
+
+    nav, .contact, .social-media {
+        flex-grow: 1; 
+        // flex-basis makes sure the flex is distributed equally! :)
+        flex-basis: 0;
+    }
+
+    nav {
+        // border: 1px solid orange;
+        // style reset
+        background: none;
+        box-shadow: none;
+
+        flex-grow: 2;
+    }
+
+    ul.footer-nav {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        flex-direction: column;    
+    }
+
+    a {
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    a:hover {
+        color: $yellow;
+        transition: 0.3s ease-in-out;
+    }
+
+    .contact {
+        // border: 1px solid purple;
+
+        p {
+            margin: 10px 0;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .email {
+            font-weight: 400;
+        }
+    }
+
+    .social-media {
+        // border: 1px solid greenyellow;
+
+        // FA Icons
+        i {
+            font-size: 18px;
+            margin: 15px 15px 0 0;
+        }
+    }
+
+    .copyright {
+        margin: 25px 0 0 0;
+
+        .line {
+            border-bottom: 2px solid white;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    // Responsiveness
+    
+    @media(max-width: 1200px) {
+        nav {
+            flex-grow: 1;
+        }
+        
+    }
+
+    @media(max-width: 880px) {
+        .flex {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav, .contact, .social-media {
+            margin: 10px 0;
+        }
+
+        ul.footer-nav {
+            flex-direction: row;
+        }
+    }
+
+}

@@ -1,0 +1,68 @@
+.featured-campaigns {
+
+    .galleryContent {
+        display: flex;
+        flex-wrap: wrap;
+
+        // spacing for the button
+        margin-bottom: 20px;
+    }
+    
+    .gallery .galleryItem {
+        text-align: center;
+        width: calc(33.3% - 10px);
+        margin: 5px;
+        position: relative;
+    }
+    
+    .gallery .galleryItem img {
+        width: 100%;
+        display: block;
+    }
+    
+    .overlay {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.7);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+        display: flex;
+        transition: opacity 0.5s;
+    }
+    
+    .overlay h4 {
+        margin: auto;
+    }
+    
+    .galleryItem:hover .overlay {
+        opacity: 0;
+    }
+
+    // Responsiveness
+    
+    @media(max-width: 930px) {
+
+        .galleryContent {
+            flex-direction: column;
+        }
+
+        .gallery .galleryItem {
+            text-align: center;
+            width: calc(100% - 10px);
+            position: relative;
+        }
+        
+    }
+    
+    @media(max-width: 780px) {
+
+        // .wrapper {
+        //     width: 100%;
+        //     padding: 0;
+        // }   
+    
+    }
+    
+}

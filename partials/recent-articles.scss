@@ -1,0 +1,67 @@
+.recent-articles {
+    background: rgba(241, 234, 237, 0.25);
+    height: 100%;
+
+    .wrapper {
+        height: 100%;
+    }
+
+    .flex {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        // border: 1px solid orange;
+        border-radius: 10px;
+        background: white;
+        margin: 10px 20px;
+        padding: 10px 10px 30px 10px;
+        text-align: left;
+
+        h4 {
+            font-weight: 600;
+            margin: 20px 0;
+        }
+
+        .date {
+            font-weight: 400;
+        }
+
+    }
+
+    .card:hover {
+        @include dropshadow-normal;
+    }
+
+    .third {
+        width: calc((100%/3) - 40px);
+    }
+        
+    // Responsiveness
+    // If there's time, try to turn this breakpoint into a 2-column instead. Same for Recent Articles. Then add flex column breakpoint last.
+    @media(max-width: 1350px) {
+
+        .wrapper {
+            width: 100%;
+            padding: 0;
+        }
+
+        .flex {
+            flex-direction: column;
+        }
+
+        .card {
+            margin: 20px;
+            // border: 1px solid purple;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .third {
+            width: calc(100% - 40px);
+        }    
+    
+    }
+}

@@ -1,0 +1,73 @@
+.how {
+    background: rgba(241, 234, 237, 0.25);
+    height: 100%;
+
+    .content {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    i {
+        font-size: 56px;
+        // color: $blue;
+    }
+
+    .item {
+        margin: 20px;
+        text-align: center;
+
+    }
+
+    .third {
+        width: calc((100%/3) - 40px);
+    }
+        
+
+    @media(max-width: 930px) {
+
+        .flex {
+            flex-direction: row;
+        }
+
+        // .content {
+        //     background: green;
+        // }
+
+        .item {
+            margin: 20px;
+        }
+
+        .third {
+            width: calc((100%/3) - 10px);
+        }
+        
+    }
+    
+    @media(max-width: 780px) {
+
+        .wrapper {
+            width: 100%;
+            padding: 0;
+        }
+
+        // section height???
+    
+        .flex {
+            flex-direction: column;
+        }
+
+        // .content {
+        //     background: orange;
+        // }
+
+        .item {
+            margin: 20px;
+            // border: 1px solid purple;
+        }
+
+        .third {
+            width: calc(100% - 40px);
+        }    
+    
+    }
+}

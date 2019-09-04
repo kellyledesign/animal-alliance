@@ -1,0 +1,25 @@
+.newsletter-signup {
+    background: $lightblue;
+    color: $blue;
+    text-align: center;
+
+    .flex {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    .email {
+        border-bottom: 2px solid $blue;
+    }
+
+    // Responsiveness
+    @media(max-width: 880px) {
+        .subscribe, .email {
+            margin: 8px 0;
+        }
+    }
+}

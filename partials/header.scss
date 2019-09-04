@@ -1,0 +1,58 @@
+header {
+    width: 100%;
+    margin: 0 auto;
+
+    .hero {
+    // border: 1px solid red;
+    height: 80vh;
+    display: flex;
+    margin: 0 auto;
+
+    // Background Image
+    
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+
+    .wrapper {
+        align-self: center;
+        text-align: center;
+
+        h1 {
+            color: white;
+            margin-bottom: 25px;
+        }
+        
+        .light {
+            height: 60px;
+            padding: 10px 20px;
+            margin: 20px;
+            border: 1px solid white;
+            border-radius: 50px;
+            outline: 0;
+            background: rgba(0,0,0,0);
+            color: white;
+            cursor: pointer;
+            // Text
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            
+            }
+
+        button:hover {
+            border: 1px solid $yellow;
+            color: $yellow;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: $yellow;
+        }
+    }
+}

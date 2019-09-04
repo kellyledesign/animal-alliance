@@ -1,0 +1,48 @@
+.staff {
+
+    .card {
+        border: 1px solid $blue;
+        border-radius: 10px;
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 40px;
+
+        img {
+            width: 200px;
+        }
+
+        .description {
+            margin-left: 20px;
+
+            h3 {
+                margin: 0 0 10px 0;
+            }
+
+        }
+    }
+
+    // Responsiveness
+    @media(max-width: 1180px) {
+
+        .card {
+
+            .description {
+                margin: 20px 0 0 0;
+            }
+
+        }
+    }
+
+    @media(max-width: 400px) {
+
+        .card {
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+    }
+
+}

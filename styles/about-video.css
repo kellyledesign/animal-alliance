@@ -1,0 +1,8 @@
+.about-video {
+  height: 80vh; }
+  .about-video iframe {
+    width: 100%;
+    height: 100%; }
+  @media (max-width: 1180px) {
+    .about-video {
+      height: 60vh; } }
